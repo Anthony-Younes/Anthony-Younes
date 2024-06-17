@@ -1,0 +1,110 @@
+
+:root {
+    font-size: 16px;
+}
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+        background-image: url(../images/IMG_4150.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensures the image covers the viewport while maintaining aspect ratio */
+        background-position: center center; /* Centers the image */
+        background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+        height: 100vh; /* Ensures the body takes up the full viewport height */
+        width: 100vw; /* Ensures the body takes up the full viewport width */
+    }
+    
+main {
+    margin-left: 5rem;
+}
+.navbar {
+    width: 10rem;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 0;
+    transition: width 200ms ease;
+    border: 1px solid white;
+}
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+}
+.link-text {
+display: none;
+
+}
+.nav-link svg {
+    min-width: 2rem;
+    margin: 1.5rem;
+}
+.front-text {
+    text-align: right;
+    margin-right: 2rem;
+    color: white;
+    font-size: 35px;;
+
+}
+/*small screens*/
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: inline-flex;
+        width: 100vw;
+        height: 15%;
+        justify-content: center;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        flex-direction: column;
+        margin: 1px;
+    }
+    main {
+        margin: 0;
+    }
+    .front-text {
+     text-align: center;
+     margin-top: 60%;
+    font-size: 15px;
+    }
+.link-text {
+display: inline-block;
+color: rgb(0, 0, 0);
+font-size: 15px;
+}
+.svg {
+    height: 20px;
+}
+}
+/*large screens*/
+@media only screen and (min-width: 600px) {
+    .navbar:hover {
+        width: 50%;
+    }
+    .navbar:hover .link-text {
+        display: block;
+        color: black;
+        font-size: 18px;
+        margin-left: 4rem;
+    }
+}
+@media only screen and (min-width: 800px) {
+    body {
+        background-position-y: 30%;
+    }
+
+    }
+    

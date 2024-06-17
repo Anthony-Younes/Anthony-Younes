@@ -1,0 +1,113 @@
+body {
+    background-color: rgba(0, 0, 0, 0.4)
+}
+.center {
+  margin:0 20%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 100%;
+  font-size: 20px;
+  color: rgb(249, 249, 249);
+  text-align: center;
+  padding: 1rem;
+}
+.h2 {
+    text-align: left;
+    font-size: 50px;
+display: inline;
+
+    font-family:'Courier New', Courier, monospace;
+}
+a {
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+h4 {
+    color:rgb(60, 135, 165)
+}
+.bold {
+    font-size: 2rem;
+}
+.advice-section {
+    margin-top: 2rem;
+
+}
+#day1,
+#day2,
+#day3,
+#day4 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-item {
+    margin-right: 20px;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+}
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 10px;
+}
+.svg {
+    margin-right: 8px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-item {
+        margin-right: 0;
+        width: 100%;
+    }
+    .nav-link {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        padding: 8px;
+    }
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+    .link-text {
+        font-size: 14px;
+    }
+}
